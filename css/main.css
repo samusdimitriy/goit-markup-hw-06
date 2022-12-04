@@ -317,7 +317,8 @@ h3 {
   height: 15px;
   border: 2px solid var(--main-text-color);
   border-radius: 3px;
-  transition: background-image var(--transition);
+
+  transition: all var(--transition);
 }
 
 .check-link {
@@ -330,6 +331,8 @@ h3 {
 }
 
 .checkbox:checked + .check-icon {
+  background-size: contain;
+  background-origin: border-box;
   border: none;
   cursor: pointer;
   background-image: url(../images/maket2/Vector/icon-check.svg);
