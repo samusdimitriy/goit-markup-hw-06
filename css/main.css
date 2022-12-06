@@ -324,7 +324,7 @@ h3 {
 
 .checkbox:checked + .check-icon {
   background-color: var(--accent-text-color);
-  background-size: contain;
+  background-position: center;
   background-origin: border-box;
   border-color: var(--accent-text-color);
   cursor: pointer;
@@ -741,6 +741,7 @@ h3 {
   opacity: 0;
   color: var(--white-color);
   transition: opacity var(--transition);
+  overflow: auto;
 }
 
 .port-img p {
