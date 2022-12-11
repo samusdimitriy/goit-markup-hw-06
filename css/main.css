@@ -338,9 +338,9 @@ p {
   outline: none;
 }
 
-.input:focus + .form-icon {
+.input:focus + .form-icon,
+.input:hover + .form-icon {
   fill: var(--accent-text-color);
-  /* border-color: var(--accent-text-color); */
 }
 
 .input-block:focus-within .input,
@@ -427,7 +427,7 @@ p {
   display: inline-block;
   margin-right: 10px;
   width: 16px;
-  height: 15px;
+  height: 16px;
   border: 2px solid var(--main-text-color);
   border-radius: 3px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0));
@@ -439,7 +439,6 @@ p {
   background-position: center;
   background-origin: border-box;
   border-color: var(--accent-text-color);
-  cursor: pointer;
   background-image: url(../images/maket2/Vector/checked.svg);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
@@ -451,13 +450,13 @@ p {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--accent-text-color);
-  text-decoration: none;
-  border-bottom: 1px solid var(--accent-text-color);
+  text-decoration-line: underline;
 }
 
 .check-label {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .form-btn.main-btn {
